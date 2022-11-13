@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Simple Bank</title>
+  </head>
+  <body>
+    <h1 class="text-center font-bold text-gray-500 text-4xl mt-8">
+      This is my won Bank
+    </h1>
+    <section class="w-3/4 mx-auto">
+      <main class="grid grid-cols-3 gap-4 mx-auto mt-8">
+        <div class="bg-lime-200 py-12 px-8 rounded-lg">
+          <h3 class="text-2xl mb-4">Deposit</h3>
+          <h2 class="text-2xl">$ <span id="deposit-total" class="text-4xl">00</span></h2>
+        </div>
+
+        <div class="bg-indigo-300 py-12 px-8 rounded-lg">
+          <h3 class="text-2xl mb-4">Withdraw</h3>
+          <h2 class="text-2xl">$ <span id="withdraw-total" class="text-4xl">00</span></h2>
+        </div>
+
+        <div class="bg-yellow-300 py-12 px-8 rounded-lg">
+          <h3 class="text-2xl mb-4">Balance</h3>
+          <h2 class="text-2xl">$ <span id="balance-total" class="text-4xl">10000</span></h2>
+        </div>
+
+      </main>
+
+      <section class="grid grid-cols-2 mt-12 gap-20 py-12 px-12">
+        <div class="bg-lime-200 py-8 px-4 rounded-lg">
+          <input
+            id="deposit-input"
+            class="block py-2 px-24 rounded mb-4"
+            type="text"
+            placeholder="Deposit"
+          />
+          <button id="deposit-button" class="bg-yellow-300 p-2 rounded-lg">Deposit</button>
+        </div>
+
+        <div class="bg-indigo-300 py-8 px-4 rounded-lg">
+          <input
+            id="withdraw-input"
+            class="block py-2 px-24 rounded mb-4"
+            type="text"
+            placeholder="Deposit"
+          />
+          <button id="withdraw-button" class="bg-yellow-300 p-2 rounded-lg">Withdraw</button>
+        </div>
+
+      </section>
+    </section>
+    <script src="./js/bank.js"></script>
+  </body>
+</html>
